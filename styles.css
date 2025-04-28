@@ -1,4 +1,3 @@
-/* Reset and general styles */
 * {
     margin: 0;
     padding: 0;
@@ -12,9 +11,8 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header Styling */
 header {
-    background-color: #222; /* Dark background */
+    background-color: #222;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -45,10 +43,9 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #ff6347; /* Tomato color on hover */
+    color: #ff6347;
 }
 
-/* Hero Section Styling */
 #hero {
     background-image: url('./images/lofi-girl-18\ \(1\).jpg');
     background-attachment: fixed;
@@ -65,7 +62,7 @@ header nav ul li a:hover {
 .hero-content h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional text shadow for contrast */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero-content p {
@@ -73,9 +70,8 @@ header nav ul li a:hover {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-/* About Section Styling */
 #about {
-    background-color: #f4f4f4; /* Light background for the About section */
+    background-color: #f4f4f4;
     padding: 50px 20px;
     text-align: center;
 }
@@ -92,9 +88,8 @@ header nav ul li a:hover {
     line-height: 1.8;
 }
 
-/* Music Section Styling */
 #music {
-    background-color: #fffbf0; /* Light cream color for the Music section */
+    background-color: #fffbf0;
     padding: 50px 20px;
     text-align: center;
 }
@@ -121,9 +116,8 @@ header nav ul li a:hover {
     margin-bottom: 10px;
 }
 
-/* Fun Facts Section Styling */
 #fun-facts {
-    background-color: #e9ecef; /* Light gray for Fun Facts section */
+    background-color: #e9ecef; 
     padding: 50px 20px;
     text-align: center;
 }
@@ -173,5 +167,161 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #ff6347; /* Tomato color on hover */
+    color: #ff6347;
+}
+
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#contact input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+#contact button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact button:hover {
+    background-color: #e5533d;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: green;
+}
+
+
+@media (max-width: 1024px) {
+    header nav ul {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    header nav ul li {
+        margin-right: 15px;
+    }
+
+    #hero h1 {
+        font-size: 2.5em;
+    }
+
+    #about h2, #music h2, #fun-facts h2 {
+        font-size: 2em;
+    }
+
+    #about p, #music p, #fun-facts ul li {
+        font-size: 1.1em;
+    }
+
+    #contact form {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero {
+        height: 80vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2em;
+    }
+
+    .hero-content p {
+        font-size: 1.1em;
+    }
+
+    #about h2, #music h2, #fun-facts h2 {
+        font-size: 1.8em;
+    }
+
+    #about p, #music p, #fun-facts ul li {
+        font-size: 1em;
+    }
+
+    #contact form {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav ul li {
+        font-size: 1em;
+    }
+
+    #hero {
+        height: 70vh;
+        padding: 30px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    #about h2, #music h2, #fun-facts h2 {
+        font-size: 1.6em;
+    }
+
+    #about p, #music p, #fun-facts ul li {
+        font-size: 0.9em;
+    }
+
+    #contact form {
+        padding: 10px;
+    }
+
+    #contact input, #contact button {
+        padding: 12px;
+        font-size: 1rem;
+    }
 }

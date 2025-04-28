@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Lofi Girl</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="mailinglist.html">Mailing List</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="contact">
+            <h1>Mailing list</h1>
+            <p>Join our mailing list to receive updates, new music, and more!</p>
+            <form id="signup-form" novalidate>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <button type="submit">Sign Up</button>
+            </form>
+            <div id="message"></div>
+        </section>
+        <footer>
+            <p>&copy; 2025 Lofi Girl. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="mailinglist.js"></script>
+</body>
+</html>
