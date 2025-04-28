@@ -1,10 +1,177 @@
-#hero{
+/* Reset and general styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background-color: #222; /* Dark background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 1.2em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6347; /* Tomato color on hover */
+}
+
+/* Hero Section Styling */
+#hero {
     background-image: url('./images/lofi-girl-18\ \(1\).jpg');
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
 }
 
-.hero-content{
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional text shadow for contrast */
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* About Section Styling */
+#about {
+    background-color: #f4f4f4; /* Light background for the About section */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1em;
+    max-width: 900px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+/* Music Section Styling */
+#music {
+    background-color: #fffbf0; /* Light cream color for the Music section */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#music h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#music p {
+    font-size: 1.1em;
+    max-width: 900px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+
+#music ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#music ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Fun Facts Section Styling */
+#fun-facts {
+    background-color: #e9ecef; /* Light gray for Fun Facts section */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#fun-facts h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#fun-facts ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+#fun-facts ul li {
+    margin-bottom: 15px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #222;
     color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #ff6347; /* Tomato color on hover */
 }
