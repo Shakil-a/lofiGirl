@@ -9,25 +9,31 @@
 <body>
     <div id="container">
         <header>
-            <nav>
+            <nav role="navigation" aria-label="Main Navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="mailinglist.html">Mailing List</a></li>
                 </ul>
             </nav>
         </header>
-        <section id="contact">
-            <h1>Mailing list</h1>
-            <p>Join our mailing list to receive updates, new music, and more!</p>
-            <form id="signup-form" novalidate>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <button type="submit">Sign Up</button>
-            </form>
-            <div id="message"></div>
-        </section>
+
+        <main>
+            <section id="contact">
+                <h1>Mailing List</h1>
+                <p>Join our mailing list to receive updates, new music, and more!</p>
+                <form id="signup-form" novalidate>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div id="message" role="alert"></div>
+            </section>
+        </main>
+
         <footer>
             <p>&copy; 2025 Lofi Girl. All rights reserved.</p>
         </footer>
